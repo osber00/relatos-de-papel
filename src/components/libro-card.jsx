@@ -1,4 +1,5 @@
-import { Link } from "react-router"
+import { Link } from "react-router";
+import { PlusCircleIcon } from '@heroicons/react/24/outline'
 
 const LibroCard = ({ libro }) => {
   return (
@@ -11,7 +12,7 @@ const LibroCard = ({ libro }) => {
       <div className="mt-4 gap-2 flex justify-between">
         <div>
           <h3 className="text-sm font-semibold truncate text-gray-700">
-            <Link to='/'>
+            <Link to={`/libro/${libro.slug}`} className="group-hover:underline">
               <span aria-hidden="true" className="absolute inset-0" />
               {libro.titulo}
             </Link>
@@ -21,25 +22,16 @@ const LibroCard = ({ libro }) => {
         </div>
         <p className="text-sm font-medium text-blue-800">${libro.precio}</p>
       </div>
-      <div className="border-b px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-        <button
-          type="button"
-          /* onClick={() => setOpen(false)} */
-          className="inline-flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
+      <div className="w-full border-b border-indigo-900 flex justify-center py-3">
+        <Link
+          to={`/libro/${libro.slug}`}
+          className="inline-flex w-full justify-center rounded-md bg-indigo-600  px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
         >
-          Comprar
-        </button>
-        <button
-          type="button"
-          data-autofocus
-          /* onClick={() => setOpen(false)} */
-          className="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
-        >
-          Ver detalles
-        </button>
+          <PlusCircleIcon aria-hidden="true" className="size-6 mx-1" /> Más Información
+        </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default LibroCard

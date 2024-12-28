@@ -1,5 +1,6 @@
 export const libros = [
   {
+    id: 1,
     titulo: "Cien años de soledad",
     slug: "cien-anos-de-soledad",
     codigo: "B001",
@@ -10,6 +11,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 2,
     titulo: "Don Quijote de la Mancha",
     slug: "don-quijote-de-la-mancha",
     codigo: "B002",
@@ -20,6 +22,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 3,
     titulo: "El amor en los tiempos del cólera",
     slug: "el-amor-en-los-tiempos-del-colera",
     codigo: "B003",
@@ -30,6 +33,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 4,
     titulo: "La sombra del viento",
     slug: "la-sombra-del-viento",
     codigo: "B004",
@@ -40,6 +44,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 5,
     titulo: "1984",
     slug: "1984",
     codigo: "B005",
@@ -50,6 +55,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 6,
     titulo: "Crónica de una muerte anunciada",
     slug: "cronica-de-una-muerte-anunciada",
     codigo: "B006",
@@ -60,6 +66,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 7,
     titulo: "La casa de los espíritus",
     slug: "la-casa-de-los-espiritus",
     codigo: "B007",
@@ -70,6 +77,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 8,
     titulo: "El principito",
     slug: "el-principito",
     codigo: "B008",
@@ -80,6 +88,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 9,
     titulo: "Rayuela",
     slug: "rayuela",
     codigo: "B009",
@@ -90,6 +99,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 10,
     titulo: "El viejo y el mar",
     slug: "el-viejo-y-el-mar",
     codigo: "B010",
@@ -100,6 +110,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 11,
     titulo: "El Alquimista",
     slug: "el-alquimista",
     codigo: "B011",
@@ -110,6 +121,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 12,
     titulo: "Los pilares de la Tierra",
     slug: "los-pilares-de-la-tierra",
     codigo: "B012",
@@ -120,6 +132,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 13,
     titulo: "El código Da Vinci",
     slug: "el-codigo-da-vinci",
     codigo: "B013",
@@ -130,6 +143,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 14,
     titulo: "Harry Potter y la piedra filosofal",
     slug: "harry-potter-y-la-piedra-filosofal",
     codigo: "B014",
@@ -140,6 +154,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 15,
     titulo: "Juego de tronos",
     slug: "juego-de-tronos",
     codigo: "B015",
@@ -150,6 +165,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 16,
     titulo: "La ladrona de libros",
     slug: "la-ladrona-de-libros",
     codigo: "B016",
@@ -160,6 +176,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 17,
     titulo: "El nombre del viento",
     slug: "el-nombre-del-viento",
     codigo: "B017",
@@ -170,6 +187,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 18,
     titulo: "La chica del tren",
     slug: "la-chica-del-tren",
     codigo: "B018",
@@ -180,6 +198,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 19,
     titulo: "El guardián entre el centeno",
     slug: "el-guardian-entre-el-centeno",
     codigo: "B019",
@@ -190,6 +209,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 20,
     titulo: "A sangre fría",
     slug: "a-sangre-fria",
     codigo: "B020",
@@ -200,6 +220,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 21,
     titulo: "El Hobbit",
     slug: "el-hobbit",
     codigo: "B021",
@@ -210,6 +231,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 22,
     titulo: "El retrato de Dorian Gray",
     slug: "el-retrato-de-dorian-gray",
     codigo: "B022",
@@ -220,6 +242,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 23,
     titulo: "Drácula",
     slug: "dracula",
     codigo: "B023",
@@ -230,6 +253,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 24,
     titulo: "Frankenstein",
     slug: "frankenstein",
     codigo: "B024",
@@ -240,6 +264,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 25,
     titulo: "La isla del tesoro",
     slug: "la-isla-del-tesoro",
     codigo: "B025",
@@ -250,6 +275,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 26,
     titulo: "Matar a un ruiseñor",
     slug: "matar-a-un-ruisenor",
     codigo: "B026",
@@ -260,6 +286,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 27,
     titulo: "El Gran Gatsby",
     slug: "el-gran-gatsby",
     codigo: "B027",
@@ -270,6 +297,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 28,
     titulo: "Los juegos del hambre",
     slug: "los-juegos-del-hambre",
     codigo: "B028",
@@ -280,6 +308,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 29,
     titulo: "Divergente",
     slug: "divergente",
     codigo: "B029",
@@ -290,6 +319,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 30,
     titulo: "Memorias de una geisha",
     slug: "memorias-de-una-geisha",
     codigo: "B030",
@@ -300,6 +330,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 31,
     titulo: "El Señor de los Anillos: La Comunidad del Anillo",
     slug: "el-senor-de-los-anillos-la-comunidad-del-anillo",
     codigo: "B031",
@@ -310,6 +341,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 32,
     titulo: "Anna Karenina",
     slug: "anna-karenina",
     codigo: "B032",
@@ -320,6 +352,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 33,
     titulo: "Guerra y paz",
     slug: "guerra-y-paz",
     codigo: "B033",
@@ -330,6 +363,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 34,
     titulo: "Las mil y una noches",
     slug: "las-mil-y-una-noches",
     codigo: "B034",
@@ -340,6 +374,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 35,
     titulo: "El extranjero",
     slug: "el-extranjero",
     codigo: "B035",
@@ -350,6 +385,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 36,
     titulo: "En busca del tiempo perdido",
     slug: "en-busca-del-tiempo-perdido",
     codigo: "B036",
@@ -360,6 +396,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 37,
     titulo: "El ruido y la furia",
     slug: "el-ruido-y-la-furia",
     codigo: "B037",
@@ -370,6 +407,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 38,
     titulo: "Madame Bovary",
     slug: "madame-bovary",
     codigo: "B038",
@@ -380,6 +418,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 39,
     titulo: "La metamorfosis",
     slug: "la-metamorfosis",
     codigo: "B039",
@@ -390,6 +429,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 40,
     titulo: "Corazón de tinieblas",
     slug: "corazon-de-tinieblas",
     codigo: "B040",
@@ -400,6 +440,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 41,
     titulo: "Moby Dick",
     slug: "moby-dick",
     codigo: "B041",
@@ -410,6 +451,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 42,
     titulo: "La Odisea",
     slug: "la-odisea",
     codigo: "B042",
@@ -420,6 +462,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 43,
     titulo: "El proceso",
     slug: "el-proceso",
     codigo: "B043",
@@ -430,6 +473,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 44,
     titulo: "El perro de los Baskerville",
     slug: "el-perro-de-los-baskerville",
     codigo: "B044",
@@ -440,6 +484,7 @@ export const libros = [
     urlImagen: "https://via.placeholder.com/150"
   },
   {
+    id: 45,
     titulo: "Los miserables",
     slug: "los-miserables",
     codigo: "B045",
@@ -449,4 +494,59 @@ export const libros = [
     formato: "Digital",
     urlImagen: "https://via.placeholder.com/150"
   },
-]
+  {
+    id: 46,
+    titulo: "El retrato de Dorian Gray",
+    slug: "el-retrato-de-dorian-gray",
+    codigo: "B046",
+    autor: "Oscar Wilde",
+    categoria: "Clásico",
+    precio: 10.99,
+    formato: "Físico",
+    urlImagen: "https://via.placeholder.com/150"
+  },
+  {
+    id: 47,
+    titulo: "La isla del tesoro",
+    slug: "la-isla-del-tesoro",
+    codigo: "B047",
+    autor: "Robert Louis Stevenson",
+    categoria: "Aventura",
+    precio: 11.49,
+    formato: "Digital",
+    urlImagen: "https://via.placeholder.com/150"
+  },
+  {
+    id: 48,
+    titulo: "Matar a un ruiseñor",
+    slug: "matar-a-un-ruisenor",
+    codigo: "B048",
+    autor: "Harper Lee",
+    categoria: "Drama",
+    precio: 13.49,
+    formato: "Físico",
+    urlImagen: "https://via.placeholder.com/150"
+  },
+  {
+    id: 49,
+    titulo: "El Gran Gatsby",
+    slug: "el-gran-gatsby",
+    codigo: "B049",
+    autor: "F. Scott Fitzgerald",
+    categoria: "Clásico",
+    precio: 10.99,
+    formato: "Digital",
+    urlImagen: "https://via.placeholder.com/150"
+  },
+  {
+    id: 50,
+    titulo: "Los juegos del hambre",
+    slug: "los-juegos-del-hambre",
+    codigo: "B050",
+    autor: "Suzanne Collins",
+    categoria: "Distopía",
+    precio: 14.99,
+    formato: "Físico",
+    urlImagen: "https://via.placeholder.com/150"
+  }
+];
