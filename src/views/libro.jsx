@@ -1,9 +1,9 @@
 import { useContext } from 'react';
-import { useParams } from 'react-router';
+import { Link, useParams } from 'react-router';
 import { LibrosContext } from '../context/libros-context';
-import {CarritoContext} from '../context/carrito-context';
+import { CarritoContext } from '../context/carrito-context';
 import Layout from './layout'
-import { ShoppingCartIcon } from '@heroicons/react/24/outline';
+import { ArrowLongLeftIcon, ShoppingCartIcon } from '@heroicons/react/24/outline';
 
 const Libro = () => {
 
@@ -38,11 +38,18 @@ const Libro = () => {
                         <p className="text-gray-600 mb-4">
                             <span className="font-semibold">Precio:</span> ${libro.precio.toFixed(2)}
                         </p>
-                        <button
-                            onClick={() => agregarAlCarrito(libro)}  
-                            className="flex justify-between px-4 py-2 bg-indigo-500 text-white font-semibold rounded-lg hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-300">
-                            < ShoppingCartIcon aria-hidden="true" className="size-6 mx-1"/> Agregar al carrito
-                        </button>
+                        <div className='flex justify-between'>
+                            <Link
+                                to={`/libros`}
+                                className="flex justify-between px-4 py-2 bg-slate-600 text-white font-semibold rounded-lg hover:bg-black focus:outline-none focus:ring-2 focus:ring-indigo-300">
+                                < ArrowLongLeftIcon aria-hidden="true" className="size-6 mx-1" /> Volver a libros
+                            </Link>
+                            <button
+                                onClick={() => agregarAlCarrito(libro)}
+                                className="flex justify-between px-4 py-2 bg-indigo-500 text-white font-semibold rounded-lg hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-300">
+                                < ShoppingCartIcon aria-hidden="true" className="size-6 mx-1" /> Agregar al carrito
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

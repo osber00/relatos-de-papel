@@ -1,47 +1,40 @@
 import {createContext, useState} from 'react';
+import useIdTemp from '../hooks/use-id-temp';
 
 export const CarritoContext = createContext();
 
 export const CarritoContextProvider = ({children}) => {
     const [carrito, setCarrito] = useState([]);
+    const {idTemp, refrescarIdTemp} = useIdTemp();
 
     const agregarAlCarrito = (libro) => {
-        setCarrito([...carrito, libro]);
-        //const libroExistente = carrito.find((item) => item.id === libro.id);
-        /* if (libroExistente) {
-            setCarrito(
-                carrito.map((item) =>
-                    item.id === libro.id ? { ...libro, cantidad: item.cantidad + 1 } : item
-                )
-            );
-        } else {
-            setCarrito([...carrito, { ...libro, cantidad: 1 }]);
-        } */
+        //setCarrito([...carrito, libro]);
+
+        refrescarIdTemp()
+        
+        setCarrito([...carrito, { ...libro, idTemp: idTemp }]);
         
     }
 
-    const eliminarDelCarrito = (libro) => {
-        const libroExistente = carrito.find((item) => item.id === libro.id);
-        if (libroExistente.cantidad === 1) {
-            setCarrito(carrito.filter((item) => item.id !== libro.id));
-        } else {
-            setCarrito(
-                carrito.map((item) =>
-                    item.id === libro.id ? { ...libro, cantidad: item.cantidad - 1 } : item
-                )
-            );
-        }
+    const eliminarDelCarrito = (idTemp) => {
+
+        //setCarrito(carrito.filter((item) => item.id !== id));
+        setCarrito(carrito.filter((item) => item.idTemp !== idTemp));
     }
 
     const limpiarCarrito = () => {
         setCarrito([]);
     }
 
+    const totalCompra = () => {
+        return carrito.reduce((total, item) => total + item.precio, 0);
+    }
+
     /* console.log(carrito.length); */
     
 
     return (
-        <CarritoContext.Provider value={{carrito, agregarAlCarrito, eliminarDelCarrito, limpiarCarrito}}>
+        <CarritoContext.Provider value={{carrito, agregarAlCarrito, eliminarDelCarrito, limpiarCarrito, totalCompra}}>
             {children}
         </CarritoContext.Provider>
     )

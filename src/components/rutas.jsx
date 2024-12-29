@@ -5,6 +5,8 @@ import Contactos from '../views/contactos'
 import Inicio from '../views/inicio'
 import NoFound from '../views/404'
 import Libro from '../views/libro'
+import Carrito from '../views/carrito'
+import Pago from '../views/pago'
 
 const Rutas = () => {
     return (
@@ -14,6 +16,8 @@ const Rutas = () => {
             <Route path="/libro/:slug" element={<Libro />} />
             <Route path="/libros" element={<Libros />} />
             <Route path="/contactos" element={<Contactos />} />
+            <Route path="/carrito" element={<Carrito />} />
+            <Route path="/pago" element={<Pago />} />
             <Route path="*" element={<NoFound/>} />
         </Routes>
     )

@@ -2,7 +2,8 @@ import { useContext } from "react"
 import Layout from "./layout"
 import { LibrosContext } from '../context/libros-context.jsx'
 import LibrosLista from "../components/libros-lista.jsx"
-import useFiltrarLibros from "../hooks/filtrar-libros.jsx"
+import useFiltrarLibros from "../hooks/use-filtrar-libros.jsx"
+import BusquedaInput from "../components/busqueda-input.jsx"
 
 const Libros = () => {
 
@@ -13,17 +14,9 @@ const Libros = () => {
         <Layout>
             <div className="bg-white">
                 <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-                    <h2 className="text-2xl font-bold tracking-tight text-gray-900 mt-5">Lista de libros</h2>
+                    <h2 className="text-balance text-center text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Lista de libros</h2>
 
-                    <div className="flex justify-center my-6">
-                        <input
-                            type="text"
-                            placeholder="Buscar libros..."
-                            className="border border-gray-300 rounded-lg px-4 py-2 w-full max-w-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                            value={busqueda}
-                            onChange={(e) => setBusqueda(e.target.value)}
-                        />
-                    </div>
+                    <BusquedaInput busqueda={busqueda} setBusqueda={setBusqueda}/>
 
                     <LibrosLista listaLibros={librosFiltrados} />
                 </div>

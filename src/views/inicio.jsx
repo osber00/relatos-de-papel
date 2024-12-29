@@ -1,10 +1,18 @@
 import { Link } from "react-router"
 import Layout from "./layout"
+import { BookOpenIcon } from "@heroicons/react/24/outline"
+import BusquedaInput from "../components/busqueda-input"
+import { useContext } from "react"
+import { LibrosContext } from "../context/libros-context"
+import useFiltrarLibros from "../hooks/use-filtrar-libros"
+import LibrosLista from "../components/libros-lista"
 
 const Inicio = () => {
+  const {listaLibros} = useContext(LibrosContext)
+  const {busqueda, setBusqueda, librosFiltrados} = useFiltrarLibros(listaLibros)
   return (
     <Layout>
-      <div className="relative isolate px-6 pt-14 lg:px-8">
+      <div className="relative isolate px-6 lg:px-8">
         <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -37,14 +45,19 @@ const Inicio = () => {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 to="/libros"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="flex justify-between rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Ver Catálogo
+                <BookOpenIcon aria-hidden="true" className="size-6 mx-1" /> Ver Catálogo
               </Link>
               <Link to="/contactos" className="text-sm font-semibold text-gray-900">
                 Contacto <span aria-hidden="true">→</span>
               </Link>
             </div>
+
+            <BusquedaInput busqueda={busqueda} setBusqueda={setBusqueda} />
+
+            <LibrosLista listaLibros={librosFiltrados} inicio={true} />
+            
           </div>
         </div>
       </div>
