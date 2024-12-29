@@ -4,6 +4,7 @@ import { LibrosContext } from '../context/libros-context';
 import { CarritoContext } from '../context/carrito-context';
 import Layout from './layout'
 import { ArrowLongLeftIcon, ShoppingCartIcon } from '@heroicons/react/24/outline';
+import toast from 'react-hot-toast';
 
 const Libro = () => {
 
@@ -12,6 +13,11 @@ const Libro = () => {
     const libro = listaLibros.find(libro => libro.slug === params.slug)
 
     const { agregarAlCarrito } = useContext(CarritoContext)
+
+    const addCarrito = (libro) => {
+        agregarAlCarrito(libro)
+        toast.success(`${libro.titulo} se ha agregado al carrito`,{duration: 4000})
+    }
 
     if (!libro) return <p className="text-center text-gray-500">No se encontró información del libro.</p>;
 
@@ -45,7 +51,7 @@ const Libro = () => {
                                 < ArrowLongLeftIcon aria-hidden="true" className="size-6 mx-1" /> Volver a libros
                             </Link>
                             <button
-                                onClick={() => agregarAlCarrito(libro)}
+                                onClick={() => addCarrito(libro)}
                                 className="flex justify-between px-4 py-2 bg-indigo-500 text-white font-semibold rounded-lg hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-300">
                                 < ShoppingCartIcon aria-hidden="true" className="size-6 mx-1" /> Agregar al carrito
                             </button>
