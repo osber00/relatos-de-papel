@@ -32,7 +32,7 @@ const NavegacionMobil = () => {
 
                         <Menu movil={true} />
 
-                        <CarritoBoton mobil={true} />
+                        <CarritoBoton mobil={true} toggleMobileMenu={toggleMobileMenu}/>
                     </div>
                 </div>
             </DialogPanel>
